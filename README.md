@@ -1,4 +1,4 @@
-# PHILOMATICA:love the process of learning 
+# PHILOMATICA:Love The Process Of Learning 
 
 PHILOMATCIA is an responsive online learning platform where anyone can unlock limitless learning anytime, anywhere at zero cost. It offers a variety of courses designed to enhance your professional skills and personal growth. The user-friendly interface ensures a seamless learning experience. Philomatica was developed with the vision of making quality education accessible to everyone, regardless of geographical boundaries.
 
