@@ -9,7 +9,7 @@ PHILOMATCIA is an responsive online learning platform where anyone can unlock li
 
 This platform consists of the following sections:
 
-1. **Home**: Introduction and overview of LEARNIVERSE.
+1. **Home**: Introduction and overview of PHILOMATICA.
 2. **Explore**: Browse through the extensive course offerings.
 3. **Services**: Learn about the additional services offerings.
 4. **Pathway**: Here you can view updated website achievements and data.
