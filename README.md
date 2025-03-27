@@ -30,7 +30,7 @@ To install and run the PHILOMATICA project locally, follow these steps:
 
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/Hi-Aman-Jain/LEARNIVERSE-E-Learning-Website.git
+   git clone https://github.com/bnssaanirudh/PROJECT-1.git
    ```
 
 2. **Navigate to the project directory**:
