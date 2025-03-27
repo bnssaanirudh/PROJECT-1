@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate of Completion</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+        .certificate {
+            width: 800px;
+            height: 600px;
+            background: white;
+            border: 10px solid #2c3e50;
+            padding: 30px;
+            margin: 50px auto;
+            position: relative;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+        }
+        .certificate h1 {
+            font-size: 50px;
+            color: #2c3e50;
+        }
+        .certificate h2 {
+            font-size: 24px;
+            color: #34495e;
+        }
+        .certificate p {
+            font-size: 18px;
+            color: #555;
+        }
+        .logo {
+            width: 150px;
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .signature {
+            position: absolute;
+            bottom: 40px;
+            left: 50px;
+            font-size: 18px;
+        }
+        .date {
+            position: absolute;
+            bottom: 40px;
+            right: 50px;
+            font-size: 18px;
+        }
+        .download-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="certificate" class="certificate">
+        <img src="/Philomatica/codes/images/icon/logo.png" alt="Philomatica Logo" class="logo">
+        <h1>Certificate of Completion</h1>
+        <h2>This is to certify that</h2>
+        <h1 id="studentName">[Student Name]</h1>
+        <p>has successfully completed the course</p>
+        <h2 id="courseName">[Course Name]</h2>
+        <div class="signature">Signature: Badampudi Agasthya Anirudh</div>
+        <div class="date">Date: <span id="currentDate"></span></div>
+    </div>
+    
+    <button class="download-btn" onclick="downloadCertificate()">Download Certificate</button>
+    
+    <script>
+        document.getElementById("studentName").textContent = "John Doe";
+        document.getElementById("courseName").textContent = "Web Development";
+        document.getElementById("currentDate").textContent = new Date().toLocaleDateString();
+
+        function downloadCertificate() {
+            html2canvas(document.getElementById("certificate")).then(canvas => {
+                let link = document.createElement('a');
+                link.href = canvas.toDataURL("image/png");
+                link.download = "certificate.png";
+                link.click();
+            });
+        }
+    </script>
+</body>
+</html>
